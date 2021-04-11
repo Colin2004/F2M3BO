@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name = "description" content="ESP8286 Node-MCU Remote control">
+	<meta name = "author" content="jouw naam @ Mediacollege Amsterdam">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZH1 Control Panel 1</title>
+    <style>
+        html{font-family: monospace;font-weight: bold; font-size: 1.5em;}
+        .center{margin: auto;	text-align: center;}
+        input {width: 10em;  height: 3em;}
+        input[type=range] {width: 100%; margin: 13.8px 0; height: 28.4px;
+            }
+        input[type=button]{background-color: LightGray;}
+    </style>
+	<script src = "script/ajax_callback.js" defer></script>
+	<script src = "script/control.js" defer></script>
+	<script src = "gauge/pureknob.js" defer></script>
+	<script src = "gauge/create_knob.js" defer></script>
+  </head>
+  <body>
+	<table class = "center">
+		<tr>
+			<td>
+				Duurzaam Huis Control Panel 1
+				<br>Device ID 
+				<span id = "yourId"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Temperature 
+				<span id="temperature"></span>
+					&deg;C
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Humidity 
+				<span id="humidity"></span>
+					%
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Heatindex 
+				<span id="heatindex"></span>
+					&deg;C
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Lightlevel
+				<span id="lightlevel"></span>
+					%
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<!-- pure knob gauges -->
+				<div id="element1" style="width: 200px; float:left; height:200px; background:gray; margin:10px">							
+				</div>
+				<div id="element2" style="width: 200px; float:left; height:200px; background:gray; margin:10px">								
+				</div>
+				<div id="element3" style="width: 200px; float:left; height:200px; background:gray; margin:10px">							
+				</div>
+				<div id="element4" style="width: 200px; float:left; height:200px; background:gray; margin:10px">							
+				</div>
+			</td>
+		</tr>				
+	</table>
+
+   
+
+  </body>
+</html>
